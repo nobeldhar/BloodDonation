@@ -1,0 +1,68 @@
+package com.nobeldhar.blooddonation.utils
+
+import android.content.Context
+import android.view.View
+import androidx.core.content.res.ResourcesCompat
+import androidx.fragment.app.FragmentActivity
+import com.nobeldhar.blooddonation.R
+import com.google.android.material.snackbar.Snackbar
+import www.sanju.motiontoast.MotionToast
+
+object ViewUtils {
+
+
+
+    fun View.visible(isVisible: Boolean) {
+        visibility = if (isVisible) View.VISIBLE else View.GONE
+    }
+
+    fun View.enable(enabled: Boolean) {
+        isEnabled = enabled
+        alpha = if (enabled) 1f else 0.5f
+    }
+
+    fun toastNoInternet(requireActivity: FragmentActivity, requireContext: Context) {
+        MotionToast.darkToast(
+                requireActivity,
+                "Failed ☹️",
+                "No Internet!",
+                MotionToast.TOAST_ERROR,
+                MotionToast.GRAVITY_BOTTOM,
+                MotionToast.LONG_DURATION,
+                ResourcesCompat.getFont(requireContext, R.font.helvetica_regular)
+        )
+    }
+
+    fun toastFailedWithMessage(requireActivity: FragmentActivity, requireContext: Context, message: String) {
+        MotionToast.darkToast(
+                requireActivity,
+                "Failed ☹️",
+                message,
+                MotionToast.TOAST_ERROR,
+                MotionToast.GRAVITY_BOTTOM,
+                MotionToast.LONG_DURATION,
+                ResourcesCompat.getFont(requireContext, R.font.helvetica_regular)
+        )
+    }
+
+
+    fun View.warningSnackbar(message: String) {
+        Snackbar.make(this, message, Snackbar.LENGTH_LONG).also { snackbar ->
+            snackbar.setAction("Ok") {
+                snackbar.dismiss()
+            }
+        }.show()
+    }
+
+    fun View.snackbar(message: String, action: (() -> Unit)? = null) {
+        val snackbar = Snackbar.make(this, message, Snackbar.LENGTH_LONG)
+        action?.let {
+            snackbar.setAction("Retry") {
+                it()
+            }
+        }
+        snackbar.show()
+    }
+
+
+}

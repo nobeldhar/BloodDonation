@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">1 Minute Help</string>
+    <string name="title_activity_one_minute_help">OneMinuteHelpActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="login">LOGIN</string>
+    <string name="register_now_underlined"> <u>REGISTER NOW</u></string>
+    <string name="create_group_underlined"> <u>CREATE GROUP</u></string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="hint_password">PASSWORD</string>
+    <string name="password">Password</string>
+    <string name="email_address">your@gmail.com</string>
+    <string name="email_or_phone">EMAIL OR PHONE</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register">REGISTER</string>
+    <string name="register_now">REGISTER NOW</string>
+    <string name="create_group">CREATE GROUP</string>
+
+    <string name="txt_code_sent"><![CDATA[We have sent you a code via sms. please enter it below & press continue]]></string>
+    <string name="txt_resend_code">If you have not received the SMS, Please press Resend Code</string>
+    <string name="open">Drawer Opend</string>
+    <string name="close">Drawer Closed</string>
+
+    <string name="blood_group">%1$s, </string>
+    <string name="blood_volume">%1$s bag(s) </string>
+    <string name="comment_count">%1$s comments </string>
+
+
+</resources>

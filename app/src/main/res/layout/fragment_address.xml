@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="viewModel"
+            type="com.nobeldhar.blooddonation.ui.profile.settings.address.AddressViewModel" />
+    </data>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.profile.settings.address.AddressFragment">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:padding="20dp"
+            android:scrollbars="none"
+            android:scrollingCache="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="District :"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="#6C6B6B"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/background_sheet_round_grey"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginStart="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@={viewModel.district}"
+                        android:id="@+id/tb_district"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/sp_district"
+                    style="@style/EditText.Flat.Grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_round_bg_outline"
+                    android:drawableEnd="@drawable/ic_arrow_down"
+                    android:minHeight="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Bagerhat"
+                    android:textColor="#1E1E1E" />
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upazilla/Thana :"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="#6C6B6B"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/background_sheet_round_grey"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginStart="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@={viewModel.thana}"
+                        android:id="@+id/tb_thana"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/sp_upzilla_thana"
+                    style="@style/EditText.Flat.Grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_round_bg_outline"
+                    android:drawableEnd="@drawable/ic_arrow_down"
+                    android:minHeight="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Mongla"
+                    android:textColor="#1E1E1E" />
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Village/City :"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="#6C6B6B"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/background_sheet_round_grey"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginStart="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@={viewModel.city}"
+                        android:id="@+id/tb_city"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/sp_village_city"
+                    style="@style/EditText.Flat.Grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_round_bg_outline"
+                    android:drawableEnd="@drawable/ic_arrow_down"
+                    android:minHeight="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Digraj"
+                    android:textColor="#1E1E1E" />
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Postcode :"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="#6C6B6B"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/background_sheet_round_grey"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginStart="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@={viewModel.postcode}"
+                        android:id="@+id/tb_postcode"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_post_code"
+                    style="@style/EditText.Flat.Grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_round_bg_outline"
+                    android:minHeight="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@={viewModel.postcode}"
+                    android:textColor="#1E1E1E" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="35dp" />
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_rect_white_overlay"
+                        android:text="Cancel"
+                        android:textColor="@android:color/black" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="0dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_update"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:onClick="@{()-> viewModel.onUpdateClicked()}"
+                        android:background="@drawable/btn_rect_white_overlay_color"
+                        android:text="Update"
+                        android:textColor="@android:color/white" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <ProgressBar
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/pb_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</layout>
