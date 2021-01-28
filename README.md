@@ -1,4 +1,4 @@
-# Offer - Android Architecture Sample
+# BloodNet - Blood Donation Network
 
 <p float="left">
   <img src="https://github.com/nobeldhar/BloodNet/blob/master/assets/dashboard.jpg" width="200">
