@@ -9,7 +9,7 @@
   <img src="https://github.com/nobeldhar/BloodNet/blob/master/assets/update_address.jpg" width="200">
  </p>
 
-A social-media type app, dedicated to blood donor community. Blood seeker can post a request, Blood donors can respond via tapping to interest button and in comments section as well. The app is attached to web-backend. Basic authentication, SMS verification, profile updating etc. features are also implemented. This project is built using some of the best practices in Android Development. Including:
+A social-media platform app, dedicated to blood donors community.  The app is attached to web-backend. It has blood request posting option for blood seekers, responding options for blood donor by tapping to interest button and in comments section. Basic authentication, SMS verification, profile updating etc. features are also implemented. This project is built using some of the best practices in Android Development. Including:
  * MVVM
  * Single Activity Pattern
  * Databinding
